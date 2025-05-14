@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import { loadSheetData } from "../utils/googleSheets";
 import * as XLSX from "xlsx";
 import { saveAs } from "file-saver";
-import { getCBMWeightAppScriptStyle } from "./CBMCalculator";
+import { getCBMWeightAppScriptStyle } from "./CBMCalculator.jsx";
 import Lottie from "lottie-react";
 import animationData from "../../../lottieload.json";
 
