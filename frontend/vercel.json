@@ -11,19 +11,15 @@
   ],
   "routes": [
     {
-      "src": "/assets/(.*)",
-      "dest": "/dist/assets/$1"
-    },
-    {
       "src": "/(.*)",
-      "dest": "/index.html"
+      "dest": "/dist/$1"
     }
   ],
   "cleanUrls": true,
   "trailingSlash": false,
   "headers": [
     {
-      "source": "/index.html",
+      "source": "/dist/index.html",
       "headers": [
         {
           "key": "Cache-Control",
@@ -32,7 +28,7 @@
       ]
     },
     {
-      "source": "/assets/(.*)",
+      "source": "/dist/assets/(.*)",
       "headers": [
         {
           "key": "Cache-Control",
