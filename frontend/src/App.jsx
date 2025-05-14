@@ -1,12 +1,13 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Navigate, Link } from "react-router-dom";
-import Navbar from './components/Navbar';
-import Dashboard from './pages/Dashboard';
-import DriversLocations from './pages/DriversLocations';
-import RetailersLocations from './pages/RetailersLocations';
-import CBMCalculator from './pages/CBMCalculator';
-import TripAssignment from './pages/TripAssignment';
-import SupplierTripAssignment from './pages/SupplierTripAssignment';
+import Navbar from './components/Navbar.jsx';
+import Dashboard from './pages/Dashboard.jsx';
+import DriversLocations from './pages/DriversLocations.jsx';
+import RetailersLocations from './pages/RetailersLocations.jsx';
+import CBMCalculator from './pages/CBMCalculator.jsx';
+import TripAssignment from './pages/TripAssignment.jsx';
+import SupplierTripAssignment from './pages/SupplierTripAssignment.jsx';
+
 
 function App() {
   return (
