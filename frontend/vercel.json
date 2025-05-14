@@ -11,6 +11,10 @@
   ],
   "routes": [
     {
+      "src": "/assets/(.*)",
+      "dest": "/dist/assets/$1"
+    },
+    {
       "src": "/(.*)",
       "dest": "/index.html"
     }
@@ -19,20 +23,22 @@
   "trailingSlash": false,
   "headers": [
     {
-      "source": "/(.*)",
+      "source": "/index.html",
       "headers": [
         {
           "key": "Cache-Control",
-          "value": "max-age=0"
+          "value": "max-age=0, must-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "max-age=31536000, immutable"
         }
       ]
     }
-  ],
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/dist/$1"
-    }
   ]
 }
-
